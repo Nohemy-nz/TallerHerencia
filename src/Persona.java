@@ -1,7 +1,7 @@
 public class Persona{
     private String nombre;
     private String cedula;
-    private int edad
+    private int edad;
 
     public Persona(){
 
@@ -9,7 +9,7 @@ public class Persona{
 
     public Persona(String nombre, String cedula, int edad){
         this.nombre = nombre;
-        this.cedula = cedula; 
+        this.cedula = cedula;
         this.edad = edad;
     }
 
@@ -25,7 +25,7 @@ public class Persona{
         if(edad >=  0){
             this.edad = edad;
         }else{
-            System.out.println("La edad no puede ser negativa"),
+            System.out.println("La edad no puede ser negativa");
         }
     }
 
@@ -41,14 +41,14 @@ public class Persona{
         return edad;
     }
 
-    public String saludar(){
-        return System.out.println("Hola, me llamo" + nombre + " y tengo" +  edad " años.");
+    public void saludar(){
+        System.out.println("Hola, me llamo " + nombre + " y tengo " +  edad + " años.");
 
     }
 
     public void mostrarInfo(){
-        system.out.println("Nombre: " + nombre);
-        system.out.println("Cedula: " + cedula);
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Cedula: " + cedula);
         System.out.println("Edad: " + edad);
     }
 }

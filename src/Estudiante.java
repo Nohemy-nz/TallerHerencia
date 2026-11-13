@@ -25,16 +25,20 @@ public class Estudiante extends Persona {
         this.promedio = promedio;
     }
 
+    public double getPromedio(){
+        return promedio;
+    }
+
     public void estudiar(){
         System.out.println(getNombre() + " esta estudiando");
 
     }
 
-    @Override 
+    @Override
     public void mostrarInfo(){
-        system.out.println("Nombre: " + nombre);
-        system.out.println("Cedula: " + cedula);
-        System.out.println("Edad: " + edad);
+        System.out.println("Nombre: " + getNombre());
+        System.out.println("Cedula: " + getCedula());
+        System.out.println("Edad: " + getEdad());
         System.out.println("Codigo del Estudiante:" + codigoEstudiantil);
         System.out.println("Promedio: " + promedio);
 
